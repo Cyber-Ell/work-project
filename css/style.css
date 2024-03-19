@@ -509,17 +509,29 @@ margin-right: auto;
 }
 
 @media (max-width:432px) {
+    .navbar{
+        padding-right:1rem;
+    }
+
+    
     .landing-caption{
-        padding-top: 13rem;
+        padding-top: 19rem;
         text-align: center;
     }
     
     .landing-caption h3{
-        font-size: 2.5rem;
+        font-size: 1.2rem;
         text-transform: uppercase;
         padding-bottom: 1rem
         
     }
+
+    .landing-caption h3 a{
+        font-size: 3rem;
+        text-transform: uppercase;
+        padding-bottom: 1rem
+        
+    } 
     
     .landing-caption p{
         color: #fff;
@@ -577,14 +589,17 @@ margin-right: auto;
 } */
   
     
-    .services div .card span{
-      border: 1px solid var(--gold)!important;
-      background-color: var(--black) !important;
+    .carousel .carousel-inner .card {
+     max-width: 280px;
     } 
     
-    .services > div:nth-child(2){
-        transform: translateY(0) !important;
+    .carousel .carousel-inner .card .text-muted{
+        font-size: 14px;
+       } 
+   .about-comp-txt{
+        margin-bottom: 3rem;
     }
+  
 
 /* Faq  */
 
@@ -605,7 +620,10 @@ margin-right: auto;
     }
 
     /* CONTACTS */
-    
+    .contact{
+        margin: 3rem 0;
+
+    }
     .contacts-context .row .col .svg-inline--fa {
         color:var(--gold);
         font-size:2rem;
