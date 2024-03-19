@@ -65,7 +65,7 @@ body{
 
 .landing{
     background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.8)),
-                url(../image/stacks-coins-arranged-bar-graph.jpg) no-repeat;
+                url(../image/home.jpg) no-repeat;
     background-position: center;
     background-size:cover;
     height: 100vh;
