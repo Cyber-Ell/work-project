@@ -31,8 +31,26 @@ function formSubmit(e) {
         },
     })
     .then(response => console.log(response))
-    .catch(error => console.log(error))
+    .catch(error => console.log(error));
+
+    formSubmit()
 }
 
 
 // script for form submition 
+let formBtn = document.querySelector('.js-formbtn');
+let form2 = document.querySelector('.js-form')
+
+
+// function formSubmit(){
+
+//         form2.innerHTML= ''
+//         const div = document.createElement('div');
+    
+//         div.className = 'my-element';
+//         const text = document.createTextNode('submited');
+//         div.appendChild(text);
+//         div.setAttribute('title', 'my Element');
+//          form.appendChild(div)
+    
+// }
