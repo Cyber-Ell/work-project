@@ -633,5 +633,10 @@ margin-right: auto;
     .contacts-context .contact-img{
         margin-bottom: 4rem;
     }
+    .contact-icons {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 
 }
