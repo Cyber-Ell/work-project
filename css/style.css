@@ -48,14 +48,16 @@ body{
     padding-bottom: .5rem;
 }
 
-
-.fade-in {  
-    opacity: 0 !important;
+.anima-fade-in{
+   
+    opacity: 0;
+    transition: all 1s .4s ease;
+   
 }
 
 .shown{
-    opacity: 1 !important;
-    transform: translateY(-1rem) !important;
+   opacity: 1;
+   transform: translateY(-1rem);
 }
 
 .gold {
@@ -340,7 +342,7 @@ font-weight: 400;
 
 .video-container video{
 width:100%;
-height: auto;
+height: 500px;
 margin-left:auto;
 margin-right: auto;
 }
@@ -590,7 +592,7 @@ margin-right: auto;
   
     
     .carousel .carousel-inner .card {
-     max-width: 280px;
+     max-width: 300px;
     } 
     
     .carousel .carousel-inner .card .text-muted{
@@ -598,6 +600,10 @@ margin-right: auto;
        } 
    .about-comp-txt{
         margin-bottom: 3rem;
+    }
+
+    .package-img{
+        transform: translateX(1rem);
     }
   
 
@@ -611,6 +617,7 @@ margin-right: auto;
     .faq .row div img {
         border-top-right-radius: 50px;
          border-bottom-left-radius: 50px;
+         transform: translateX(4rem);
     }
 
     .faq .row div img, .contact .row div img {
@@ -639,4 +646,28 @@ margin-right: auto;
         text-align: center;
     }
 
+    /* review section  */
+    .review .box .quotes .svg-inline--fa{
+        color:var(--gold);
+        font-size: 2rem;
+        margin-bottom: .5rem;
+      }
+
+      .review .box-container .box .user{
+        height: 6rem;
+        width: 6rem;
+        object-fit: cover;
+      }
+
+      .review .box-container .box {
+        padding:2rem 1rem;
+      }
+
+      .review .box-container .box {
+        box-shadow: 2px 2px 20px 2px var(--gold);
+        border-top-right-radius: 3rem;
+        border-bottom-left-radius: 3rem;
+      }
+      
+      
 }

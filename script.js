@@ -11,7 +11,7 @@ const observer = new IntersectionObserver((entries) => {
     )
 })
 
-const hiddenElements = document.querySelectorAll('.fade-in');
+const hiddenElements = document.querySelectorAll('.anima-fade-in');
 hiddenElements.forEach((el) => observer.observe(el));
 
 // Form script 
@@ -38,8 +38,8 @@ function formSubmit(e) {
 
 
 // script for form submition 
-let formBtn = document.querySelector('.js-formbtn');
-let form2 = document.querySelector('.js-form')
+// let formBtn = document.querySelector('.js-formbtn');
+// let form2 = document.querySelector('.js-form')
 
 
 // function formSubmit(){
