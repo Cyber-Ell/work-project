@@ -511,8 +511,8 @@ margin-right: auto;
 }
 
 @media (max-width:432px) {
-    .navbar{
-        padding-right:1rem;
+    .container .navbar{
+        padding-right:1rem !important;
     }
 
     
@@ -614,17 +614,7 @@ margin-right: auto;
     }
 
 
-    .faq .row div img {
-        border-top-right-radius: 50px;
-         border-bottom-left-radius: 50px;
-         transform: translateX(4rem);
-    }
 
-    .faq .row div img, .contact .row div img {
-        height: 250px;
-        width: 250px;
-        margin-bottom: 2rem;
-    }
 
     /* CONTACTS */
     .contact{
@@ -668,6 +658,7 @@ margin-right: auto;
         border-top-right-radius: 3rem;
         border-bottom-left-radius: 3rem;
       }
+
       
       
 }
