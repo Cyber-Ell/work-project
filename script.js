@@ -1,4 +1,4 @@
- 
+import { Analytics } from "@vercel/analytics/react";
  
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
