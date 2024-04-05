@@ -352,7 +352,7 @@ margin-right: auto;
 
 .contact-form{
     border-radius: 50px;
-    transform: translateY(-10rem);
+    transform: translateY(-8rem);
 }
 
 .contact-form h3 {
@@ -392,16 +392,20 @@ margin-right: auto;
     font-weight: 600;
 }
 
-.contact-icons{
-    margin-top: 4rem
+.contact-icons {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
+
 
 .contact-icons .svg-inline--fa{
     color: var(--bg);
 }
 .contact-form .svg-inline--fa{
     font-size: 30px;
-    padding-right:8px
+    padding-right:8px;
+    color: var(--gold);
     
 }
 
