@@ -90,7 +90,7 @@ body{
 }
 
 .landing-caption{
-    padding-top: 5rem;
+    padding-top: 2rem;
     text-align: center;
 }
 
@@ -358,7 +358,7 @@ margin-right: auto;
 
 .contact-form{
     border-radius: 50px;
-    transform: translateY(-8rem);
+    transform: translateY(-3rem);
 }
 
 .contact-form h3 {
@@ -669,6 +669,11 @@ margin-right: auto;
         border-bottom-left-radius: 3rem;
       }
 
-      
+      .contact-form{
+        transform: translateY(-2rem);
+    }
+    .contact-form .btn a{
+        font-size: 16px;
+    }
       
 }
