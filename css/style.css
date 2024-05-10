@@ -221,7 +221,7 @@ font-weight: 400;
     transition: .3s ease-in-out;
     border-radius: 1.2rem;min-width: 250px;
     max-width: 500px;
-    transition: .5s ease-in;
+    transition: .3s ease-in;
     
 }
 
@@ -329,6 +329,13 @@ font-weight: 400;
 .review .box-container .box .stars .svg-inline--fa{
   color: var(--main-color);
   font-size: 1.5rem;
+}
+
+/* latest packahes */
+
+.latest-packages .lp-container img:hover{
+    transform: rotateZ(20deg);
+    transition: .3s linear;
 }
 
 .footer-container {
