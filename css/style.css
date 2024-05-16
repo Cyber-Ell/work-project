@@ -67,7 +67,7 @@ body{
 
 .landing{
     background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.8)),
-                url(../image/home.jpg) no-repeat;
+                url(../image/2150970207.jpg) no-repeat;
     background-position: center;
     background-size:cover;
     height: 100vh;
@@ -78,8 +78,8 @@ body{
 }
 
 .landing-2{
-    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.8)),
-                url(../image/collage-finance-banner-concept.jpg) no-repeat;
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.8)),
+                url(../image/89894.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -90,7 +90,7 @@ body{
 }
 
 .landing-caption{
-    padding-top: 2rem;
+    padding-top: 3rem;
     text-align: center;
 }
 
@@ -104,9 +104,10 @@ body{
 
 .landing-caption p{
     color: #fff;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
     max-width: 800px;
     margin: 0 auto;
+    font-size: 20px;
     transition: 1.2s .2s ease-in;
 }
 
@@ -114,6 +115,15 @@ body{
     color: #fff !important; border-color: var(--gold) ;
     background-color:var(--gold) ;
 }
+/* landing-2  */
+.landing-2 .landing-caption h4{
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #f1f1f1 !important;
+    text-align: center;
+}
+
 
 /* Main  */
 
@@ -331,12 +341,6 @@ font-weight: 400;
   font-size: 1.5rem;
 }
 
-/* latest packahes */
-
-.latest-packages .lp-container img:hover{
-    transform: rotateZ(20deg);
-    transition: .3s linear;
-}
 
 .footer-container {
     margin-top:4rem;
@@ -354,10 +358,37 @@ font-weight: 400;
 /* video  */
 
 .video-container video{
-width:100%;
+    display: flex;
+width:60%;
 height: 500px;
+border-radius:10px;
 margin-left:auto;
 margin-right: auto;
+}
+.video-container-2 video{
+    display: flex;
+width:80%;
+height: 400px;
+border-radius:10px;
+margin-left:auto;
+margin-right: auto;
+object-fit:scale-down;
+}
+
+.play-icon{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    opacity: 0;
+    transition: .3s linear;
+}
+
+video:hover + .play-icon {
+    opacity: 1;
+}
+
+.play-icon .svg-inline--fa{
+    color: var(--gold);
 }
 
 
@@ -423,9 +454,118 @@ margin-right: auto;
 }
 
 
-.carousel-control-prev-icon{
-    color: var(--gold) !important;
+/* card css */
+
+.wrapper{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.container-card  {
+    height: 120px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.card-slide {
+    width: 80px;
+    border-radius:2rem;
+    background-size: cover; 
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    transition: cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+.card-slide > .row {
+    color:white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card-slide > .row > .icon {
+    background: #234;
+    color: white;
+    border-radius: 50%; 
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card-slide > .row > .icon img{
+    width: 100%;
+}
+
+.card-slide > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 530px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay:.3s;
+    transition: all .3s ease;
+}
+
+.card-slide > .row > .icon:hover{
+    cursor:pointer;
+    background:var(--gold);
+}
+
+.description p {
+    color: #b0b0ba;
+    padding-top: 5px;
+}
+
+.description h4 {
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 600;
+}
+
+input{
+    display: none;
+}
+
+input:hover + label{
+    width: 600px;
+}
+
+input:hover + label .description{
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card-slide {
+    background-position: center;
+    background-size:contain;
+}
+
+.card-slide[for="c1"] {
+    background-image: url();
+;
+}
+
+.card-slide[for="c2"] {
+    background-image: url();
+}
+
+.card-slide[for="c3"] {
+    background-image: url();
+}
+/* 
+.card-slide[for="c4"] {
+    background-image: url(/images/image\ \(4\).jpg);
+} */
+
 
 
 
@@ -524,6 +664,40 @@ margin-right: auto;
 } 
 
 
+/* card slide */
+
+.wrapper{
+    width: 90%;
+    padding: 1rem;
+}
+
+.card-slide{
+    width: 40px;
+}
+
+.card-slide > .row > .description{
+    width:350px;
+    height:150px;
+}
+
+.card-slide > .row > .icon{
+    width: 40px;
+    height:40px;
+}
+
+.description p {
+    color: #b0b0ba;
+    padding-top: 2px;
+}
+
+.container-card  {
+    height: 155px;
+    
+}
+
+input:hover + label{
+    width: 400px;
+}
 
 }
 
@@ -539,9 +713,8 @@ margin-right: auto;
     }
     
     .landing-caption h3{
-        font-size: 1.2rem;
-        text-transform: uppercase;
-        padding-bottom: 1rem
+        font-size: 1rem;
+        padding-bottom: 1rem;
         
     }
 
@@ -569,7 +742,7 @@ margin-right: auto;
     .main-heading{
         font-size: 1.5rem;
         font-weight: 600;
-        padding: 3rem 0;
+        padding: 1rem 0;
         color: #fff;
         margin: 0;
     }
@@ -681,6 +854,63 @@ margin-right: auto;
     }
     .contact-form .btn a{
         font-size: 16px;
+    }
+
+    /* card slide */
+     label{
+        width: 300px;
+    }
+
+    .container-card {
+        display: flex;
+        flex-direction: column;
+        height: 110vh;
+        padding-top: 1rem;
+    }
+
+    .wrapper{
+        width: 100%;
+        height: 700px;
+        }
+    
+    .card-slide{
+        width: 300px;
+        margin: auto 0;
+    }
+    
+    .card-slide > .row > .description{
+        width:180px;
+        height:220px;
+    }
+    
+    .card-slide > .row > .icon{
+        width: 40px;
+        height:40px;
+    }
+    
+    .description p {
+        color: #b0b0ba;
+        padding-top: 1px;
+    }
+    
+  
+    .card-slide > .row > .description {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+        opacity: 1;
+        transform: translateY(0);
+      
+    }
+    .description h4{
+        font-size: 1rem;
+    }
+    .play-icon{
+        top: 30%;
+        left: 46%;
+        opacity: .4;
+       
     }
       
 }

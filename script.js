@@ -34,7 +34,7 @@ function formSubmit(e) {
     .catch(error => console.log(error));
 
     formSubmit()
-}
+};  
 
 
 // script for form submition 
@@ -54,3 +54,7 @@ function formSubmit(e) {
 //          form.appendChild(div)
     
 // }
+
+// VIDEO PLAY BUTTON
+const playBtn = document.querySelector('.play-icon');
+const video = document.querySelector('.video');
